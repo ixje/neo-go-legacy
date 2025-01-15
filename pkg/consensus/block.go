@@ -1,10 +1,10 @@
 package consensus
 
 import (
-	"github.com/nspcc-dev/dbft/block"
-	"github.com/nspcc-dev/dbft/crypto"
 	coreb "github.com/nspcc-dev/neo-go/pkg/core/block"
 	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
+	"github.com/nspcc-dev/neo-go/pkg/dbft/block"
+	"github.com/nspcc-dev/neo-go/pkg/dbft/crypto"
 	"github.com/nspcc-dev/neo-go/pkg/util"
 )
 

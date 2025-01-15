@@ -1,8 +1,8 @@
 package consensus
 
 import (
-	"github.com/nspcc-dev/dbft/payload"
 	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
+	"github.com/nspcc-dev/neo-go/pkg/dbft/payload"
 	"github.com/nspcc-dev/neo-go/pkg/io"
 	"github.com/nspcc-dev/neo-go/pkg/util"
 )

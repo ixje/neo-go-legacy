@@ -1,9 +1,9 @@
 package consensus
 
 import (
-	"github.com/nspcc-dev/dbft/crypto"
-	"github.com/nspcc-dev/dbft/payload"
 	"github.com/nspcc-dev/neo-go/pkg/core/state"
+	"github.com/nspcc-dev/neo-go/pkg/dbft/crypto"
+	"github.com/nspcc-dev/neo-go/pkg/dbft/payload"
 	"github.com/nspcc-dev/neo-go/pkg/io"
 	"github.com/nspcc-dev/neo-go/pkg/util"
 	"github.com/pkg/errors"

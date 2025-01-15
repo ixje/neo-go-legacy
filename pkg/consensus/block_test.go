@@ -4,9 +4,9 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/nspcc-dev/dbft/block"
-	"github.com/nspcc-dev/dbft/crypto"
 	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
+	"github.com/nspcc-dev/neo-go/pkg/dbft/block"
+	"github.com/nspcc-dev/neo-go/pkg/dbft/crypto"
 	"github.com/nspcc-dev/neo-go/pkg/util"
 	"github.com/stretchr/testify/require"
 )

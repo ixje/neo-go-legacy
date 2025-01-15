@@ -5,9 +5,9 @@ import (
 	gio "io"
 	"testing"
 
-	"github.com/nspcc-dev/dbft/crypto"
-	"github.com/nspcc-dev/dbft/payload"
 	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
+	"github.com/nspcc-dev/neo-go/pkg/dbft/crypto"
+	"github.com/nspcc-dev/neo-go/pkg/dbft/payload"
 	"github.com/nspcc-dev/neo-go/pkg/io"
 	"github.com/nspcc-dev/neo-go/pkg/util"
 	"github.com/stretchr/testify/require"

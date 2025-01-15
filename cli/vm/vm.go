@@ -1,7 +1,6 @@
 package vm
 
 import (
-	vmcli "github.com/nspcc-dev/neo-go/pkg/vm/cli"
 	"github.com/urfave/cli"
 )
 
@@ -18,6 +17,7 @@ func NewCommands() []cli.Command {
 }
 
 func startVMPrompt(ctx *cli.Context) error {
-	p := vmcli.New()
-	return p.Run()
+	//p := vmcli.New()
+	//return p.Run()
+	return nil
 }
