@@ -3,8 +3,8 @@ package vm
 import (
 	"errors"
 
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
+	"github.com/ixje/neo-go-legacy/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/vm/emit"
 )
 
 type stackItemType byte

@@ -13,10 +13,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/hash"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
-	"github.com/nspcc-dev/neo-go/pkg/vm/opcode"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/hash"
+	"github.com/ixje/neo-go-legacy/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/vm/emit"
+	"github.com/ixje/neo-go-legacy/pkg/vm/opcode"
 	"github.com/stretchr/testify/require"
 )
 
@@ -33,7 +33,7 @@ type (
 		Name   string
 		Script vmUTScript
 		Steps  []vmUTStep
-		// FIXME remove when NEO 3.0 https://github.com/nspcc-dev/neo-go/issues/477
+		// FIXME remove when NEO 3.0 https://github.com/ixje/neo-go-legacy/issues/477
 		ScriptTable []map[string]vmUTScript
 	}
 
@@ -110,7 +110,7 @@ func TestUT(t *testing.T) {
 }
 
 func getTestingInterop(id uint32) *InteropFuncPrice {
-	// FIXME in NEO 3.0 it is []byte{0x77, 0x77, 0x77, 0x77} https://github.com/nspcc-dev/neo-go/issues/477
+	// FIXME in NEO 3.0 it is []byte{0x77, 0x77, 0x77, 0x77} https://github.com/ixje/neo-go-legacy/issues/477
 	if id == InteropNameToID([]byte("Test.ExecutionEngine.GetScriptContainer")) ||
 		id == InteropNameToID([]byte("System.ExecutionEngine.GetScriptContainer")) {
 		return &InteropFuncPrice{InteropFunc(func(v *VM) error {
@@ -125,7 +125,7 @@ func testFile(t *testing.T, filename string) {
 	data, err := ioutil.ReadFile(filename)
 	require.NoError(t, err)
 
-	// FIXME remove when NEO 3.0 https://github.com/nspcc-dev/neo-go/issues/477
+	// FIXME remove when NEO 3.0 https://github.com/ixje/neo-go-legacy/issues/477
 	if len(data) > 2 && data[0] == 0xef && data[1] == 0xbb && data[2] == 0xbf {
 		data = data[3:]
 	}
@@ -141,7 +141,7 @@ func testFile(t *testing.T, filename string) {
 				vm := load(prog)
 				vm.state = breakState
 
-				// FIXME remove when NEO 3.0 https://github.com/nspcc-dev/neo-go/issues/477
+				// FIXME remove when NEO 3.0 https://github.com/ixje/neo-go-legacy/issues/477
 				vm.getScript = getScript(test.ScriptTable)
 				vm.RegisterInteropGetter(getTestingInterop)
 

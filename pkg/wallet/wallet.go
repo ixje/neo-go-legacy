@@ -6,9 +6,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/keys"
+	"github.com/ixje/neo-go-legacy/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/vm"
 )
 
 const (

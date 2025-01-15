@@ -1,10 +1,10 @@
 package state
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/crypto/hash"
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/hash"
+	"github.com/ixje/neo-go-legacy/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 )
 
 // Contract holds information about a smart contract in the NEO blockchain.

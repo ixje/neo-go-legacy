@@ -1,11 +1,11 @@
 package state
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/trigger"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm"
+	"github.com/ixje/neo-go-legacy/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract/trigger"
+	"github.com/ixje/neo-go-legacy/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/vm"
 )
 
 // NotificationEvent is a tuple of scripthash that emitted the StackItem as a

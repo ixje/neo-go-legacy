@@ -1,10 +1,10 @@
 package result
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm"
+	"github.com/ixje/neo-go-legacy/pkg/core/state"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract"
+	"github.com/ixje/neo-go-legacy/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/vm"
 )
 
 // ApplicationLog wrapper used for the representation of the
@@ -24,7 +24,7 @@ type Execution struct {
 	Events      []NotificationEvent       `json:"notifications"`
 }
 
-//NotificationEvent response wrapper
+// NotificationEvent response wrapper
 type NotificationEvent struct {
 	Contract util.Uint160            `json:"contract"`
 	Item     smartcontract.Parameter `json:"state"`

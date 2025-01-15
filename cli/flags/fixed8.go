@@ -4,7 +4,7 @@ import (
 	"flag"
 	"strings"
 
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 	"github.com/urfave/cli"
 )
 

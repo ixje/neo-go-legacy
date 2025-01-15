@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/network/payload"
+	"github.com/ixje/neo-go-legacy/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/network/payload"
 	"go.uber.org/zap"
 )
 

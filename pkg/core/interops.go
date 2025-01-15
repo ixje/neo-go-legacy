@@ -10,14 +10,14 @@ package core
 import (
 	"sort"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/block"
-	"github.com/nspcc-dev/neo-go/pkg/core/dao"
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract/trigger"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm"
+	"github.com/ixje/neo-go-legacy/pkg/core/block"
+	"github.com/ixje/neo-go-legacy/pkg/core/dao"
+	"github.com/ixje/neo-go-legacy/pkg/core/state"
+	"github.com/ixje/neo-go-legacy/pkg/core/transaction"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract/trigger"
+	"github.com/ixje/neo-go-legacy/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/vm"
 	"go.uber.org/zap"
 )
 

@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/core/state"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 )
 
 type (

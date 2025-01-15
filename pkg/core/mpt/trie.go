@@ -6,9 +6,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/storage"
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/core/storage"
+	"github.com/ixje/neo-go-legacy/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 )
 
 // Trie is an MPT trie storing all key-value pairs.

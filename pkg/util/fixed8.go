@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nspcc-dev/neo-go/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/io"
 )
 
 const (

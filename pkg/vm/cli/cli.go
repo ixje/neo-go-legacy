@@ -1,7 +1,7 @@
 package cli
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/vm"
+	"github.com/ixje/neo-go-legacy/pkg/vm"
 )
 
 const (

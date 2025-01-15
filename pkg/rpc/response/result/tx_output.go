@@ -1,9 +1,9 @@
 package result
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/core/transaction"
+	"github.com/ixje/neo-go-legacy/pkg/encoding/address"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 )
 
 // TransactionOutput is a wrapper to represent transaction's output.

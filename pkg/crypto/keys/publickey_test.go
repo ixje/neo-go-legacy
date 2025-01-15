@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/btcsuite/btcd/btcec"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/hash"
-	"github.com/nspcc-dev/neo-go/pkg/internal/testserdes"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/hash"
+	"github.com/ixje/neo-go-legacy/pkg/internal/testserdes"
 	"github.com/stretchr/testify/require"
 )
 

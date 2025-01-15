@@ -1,10 +1,10 @@
 package nep5
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/interop/engine"
-	"github.com/nspcc-dev/neo-go/pkg/interop/runtime"
-	"github.com/nspcc-dev/neo-go/pkg/interop/storage"
-	"github.com/nspcc-dev/neo-go/pkg/interop/util"
+	"github.com/ixje/neo-go-legacy/pkg/interop/engine"
+	"github.com/ixje/neo-go-legacy/pkg/interop/runtime"
+	"github.com/ixje/neo-go-legacy/pkg/interop/storage"
+	"github.com/ixje/neo-go-legacy/pkg/interop/util"
 )
 
 // Token holds all token info

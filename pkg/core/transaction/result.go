@@ -1,6 +1,6 @@
 package transaction
 
-import "github.com/nspcc-dev/neo-go/pkg/util"
+import "github.com/ixje/neo-go-legacy/pkg/util"
 
 // Result represents the Result of a transaction.
 type Result struct {

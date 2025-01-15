@@ -9,14 +9,14 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
-	"github.com/nspcc-dev/neo-go/pkg/wallet"
+	"github.com/ixje/neo-go-legacy/pkg/core/transaction"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/keys"
+	"github.com/ixje/neo-go-legacy/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract"
+	"github.com/ixje/neo-go-legacy/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/vm"
+	"github.com/ixje/neo-go-legacy/pkg/vm/emit"
+	"github.com/ixje/neo-go-legacy/pkg/wallet"
 )
 
 // ParameterContext represents smartcontract parameter's context.

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract"
+	"github.com/ixje/neo-go-legacy/pkg/vm/emit"
 )
 
 // Stack implementation for the neo-go virtual machine. The stack implements
@@ -307,7 +307,8 @@ func (s *Stack) Back() *Element {
 
 // Peek returns the element (n) far in the stack beginning from
 // the top of the stack.
-// 	n = 0 => will return the element on top of the stack.
+//
+//	n = 0 => will return the element on top of the stack.
 func (s *Stack) Peek(n int) *Element {
 	i := 0
 	for e := s.Top(); e != nil; e = e.Next() {
@@ -344,8 +345,9 @@ func (s *Stack) Remove(e *Element) *Element {
 
 // Dup duplicates and returns the element at position n.
 // Dup is used for copying elements on to the top of its own stack.
-// 	s.Push(s.Peek(0)) // will result in unexpected behaviour.
-// 	s.Push(s.Dup(0)) // is the correct approach.
+//
+//	s.Push(s.Peek(0)) // will result in unexpected behaviour.
+//	s.Push(s.Dup(0)) // is the correct approach.
 func (s *Stack) Dup(n int) *Element {
 	e := s.Peek(n)
 	if e == nil {
@@ -359,9 +361,10 @@ func (s *Stack) Dup(n int) *Element {
 
 // Iter iterates over all the elements int the stack, starting from the top
 // of the stack.
-// 	s.Iter(func(elem *Element) {
+//
+//	s.Iter(func(elem *Element) {
 //		// do something with the element.
-// 	})
+//	})
 func (s *Stack) Iter(f func(*Element)) {
 	for e := s.Top(); e != nil; e = e.Next() {
 		f(e)
@@ -370,9 +373,10 @@ func (s *Stack) Iter(f func(*Element)) {
 
 // IterBack iterates over all the elements of the stack, starting from the bottom
 // of the stack.
-// 	s.IterBack(func(elem *Element) {
+//
+//	s.IterBack(func(elem *Element) {
 //		// do something with the element.
-// 	})
+//	})
 func (s *Stack) IterBack(f func(*Element)) {
 	for e := s.Back(); e != nil; e = e.Prev() {
 		f(e)

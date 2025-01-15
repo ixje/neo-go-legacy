@@ -4,9 +4,9 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/block"
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/internal/testserdes"
+	"github.com/ixje/neo-go-legacy/pkg/core/block"
+	"github.com/ixje/neo-go-legacy/pkg/core/transaction"
+	"github.com/ixje/neo-go-legacy/pkg/internal/testserdes"
 	"github.com/stretchr/testify/assert"
 )
 

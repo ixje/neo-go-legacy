@@ -1,8 +1,8 @@
 package consensus
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/dbft/payload"
-	"github.com/nspcc-dev/neo-go/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/dbft/payload"
+	"github.com/ixje/neo-go-legacy/pkg/io"
 )
 
 // commit represents dBFT Commit message.

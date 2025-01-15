@@ -3,10 +3,10 @@ package state
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/internal/random"
-	"github.com/nspcc-dev/neo-go/pkg/internal/testserdes"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/vm"
+	"github.com/ixje/neo-go-legacy/pkg/internal/random"
+	"github.com/ixje/neo-go-legacy/pkg/internal/testserdes"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract"
+	"github.com/ixje/neo-go-legacy/pkg/vm"
 )
 
 func TestEncodeDecodeNotificationEvent(t *testing.T) {

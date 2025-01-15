@@ -1,8 +1,8 @@
 package wallet
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/encoding/address"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 )
 
 // Token represents imported token contract.

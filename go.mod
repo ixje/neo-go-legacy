@@ -1,6 +1,4 @@
-module github.com/nspcc-dev/neo-go
-
-replace github.com/nspcc-dev/dbft => github.com/ixje/neo-go-legacy-dbft v0.0.0-20250115175722-57f3662027db
+module github.com/ixje/neo-go-legacy
 
 require (
 	github.com/Workiva/go-datastructures v1.0.50

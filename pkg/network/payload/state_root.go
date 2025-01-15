@@ -1,8 +1,8 @@
 package payload
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/core/state"
+	"github.com/ixje/neo-go-legacy/pkg/io"
 )
 
 // MaxStateRootsAllowed is a maxumum amount of state roots

@@ -3,9 +3,9 @@ package payload
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/hash"
-	"github.com/nspcc-dev/neo-go/pkg/internal/testserdes"
-	. "github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/hash"
+	"github.com/ixje/neo-go-legacy/pkg/internal/testserdes"
+	. "github.com/ixje/neo-go-legacy/pkg/util"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,8 +1,8 @@
 package core
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 )
 
 // A HeaderHashList represents a list of header hashes.
@@ -50,7 +50,8 @@ func (l *HeaderHashList) Last() util.Uint256 {
 // Slice return a subslice of the underlying hashes.
 // Subsliced from start to end.
 // Example:
-// 	headers := headerList.Slice(0, 2000)
+//
+//	headers := headerList.Slice(0, 2000)
 func (l *HeaderHashList) Slice(start, end int) []util.Uint256 {
 	return l.hashes[start:end]
 }

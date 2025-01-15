@@ -3,7 +3,7 @@ package keys
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/hash"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/hash"
 	"github.com/stretchr/testify/assert"
 )
 

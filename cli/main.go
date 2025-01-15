@@ -3,11 +3,11 @@ package main
 import (
 	"os"
 
-	"github.com/nspcc-dev/neo-go/cli/server"
-	"github.com/nspcc-dev/neo-go/cli/smartcontract"
-	"github.com/nspcc-dev/neo-go/cli/vm"
-	"github.com/nspcc-dev/neo-go/cli/wallet"
-	"github.com/nspcc-dev/neo-go/pkg/config"
+	"github.com/ixje/neo-go-legacy/cli/server"
+	"github.com/ixje/neo-go-legacy/cli/smartcontract"
+	"github.com/ixje/neo-go-legacy/cli/vm"
+	"github.com/ixje/neo-go-legacy/cli/wallet"
+	"github.com/ixje/neo-go-legacy/pkg/config"
 	"github.com/urfave/cli"
 )
 

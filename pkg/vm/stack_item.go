@@ -10,8 +10,8 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract"
+	"github.com/ixje/neo-go-legacy/pkg/vm/emit"
 )
 
 // A StackItem represents the "real" value that is pushed on the stack.
@@ -287,7 +287,7 @@ func (i *BoolItem) Bytes() []byte {
 		return []byte{1}
 	}
 	// return []byte{0}
-	// FIXME revert when NEO 3.0 https://github.com/nspcc-dev/neo-go/issues/477
+	// FIXME revert when NEO 3.0 https://github.com/ixje/neo-go-legacy/issues/477
 	return []byte{}
 }
 

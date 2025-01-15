@@ -4,11 +4,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/nspcc-dev/neo-go/cli/flags"
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neo-go/pkg/rpc/client"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/wallet"
+	"github.com/ixje/neo-go-legacy/cli/flags"
+	"github.com/ixje/neo-go-legacy/pkg/encoding/address"
+	"github.com/ixje/neo-go-legacy/pkg/rpc/client"
+	"github.com/ixje/neo-go-legacy/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/wallet"
 	"github.com/urfave/cli"
 )
 

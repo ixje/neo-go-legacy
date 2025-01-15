@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/internal/testserdes"
+	"github.com/ixje/neo-go-legacy/pkg/internal/testserdes"
 	"github.com/stretchr/testify/require"
 )
 

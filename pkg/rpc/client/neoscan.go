@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"sort"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/rpc/response/result"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/core/state"
+	"github.com/ixje/neo-go-legacy/pkg/core/transaction"
+	"github.com/ixje/neo-go-legacy/pkg/rpc/response/result"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 	errs "github.com/pkg/errors"
 )
 

@@ -3,8 +3,8 @@ package network
 import (
 	"time"
 
-	"github.com/nspcc-dev/neo-go/pkg/config"
-	"github.com/nspcc-dev/neo-go/pkg/wallet"
+	"github.com/ixje/neo-go-legacy/pkg/config"
+	"github.com/ixje/neo-go-legacy/pkg/wallet"
 	"go.uber.org/zap/zapcore"
 )
 

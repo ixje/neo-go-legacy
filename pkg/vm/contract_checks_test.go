@@ -3,7 +3,7 @@ package vm
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/vm/opcode"
+	"github.com/ixje/neo-go-legacy/pkg/vm/opcode"
 	"github.com/stretchr/testify/assert"
 )
 

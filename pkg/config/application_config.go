@@ -3,10 +3,10 @@ package config
 import (
 	"time"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/storage"
-	"github.com/nspcc-dev/neo-go/pkg/network/metrics"
-	"github.com/nspcc-dev/neo-go/pkg/rpc"
-	"github.com/nspcc-dev/neo-go/pkg/wallet"
+	"github.com/ixje/neo-go-legacy/pkg/core/storage"
+	"github.com/ixje/neo-go-legacy/pkg/network/metrics"
+	"github.com/ixje/neo-go-legacy/pkg/rpc"
+	"github.com/ixje/neo-go-legacy/pkg/wallet"
 )
 
 // ApplicationConfiguration config specific to the node.

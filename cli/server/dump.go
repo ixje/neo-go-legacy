@@ -8,9 +8,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/mpt"
-	"github.com/nspcc-dev/neo-go/pkg/core/storage"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/core/mpt"
+	"github.com/ixje/neo-go-legacy/pkg/core/storage"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 )
 
 type dump []blockDump

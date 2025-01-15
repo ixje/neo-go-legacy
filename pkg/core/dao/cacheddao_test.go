@@ -3,11 +3,11 @@ package dao
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/core/state"
-	"github.com/nspcc-dev/neo-go/pkg/core/storage"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/hash"
-	"github.com/nspcc-dev/neo-go/pkg/internal/random"
-	"github.com/nspcc-dev/neo-go/pkg/smartcontract"
+	"github.com/ixje/neo-go-legacy/pkg/core/state"
+	"github.com/ixje/neo-go-legacy/pkg/core/storage"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/hash"
+	"github.com/ixje/neo-go-legacy/pkg/internal/random"
+	"github.com/ixje/neo-go-legacy/pkg/smartcontract"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

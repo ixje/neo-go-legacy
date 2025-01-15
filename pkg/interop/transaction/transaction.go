@@ -4,10 +4,10 @@ Package transaction provides functions to work with transactions.
 package transaction
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/interop/attribute"
-	"github.com/nspcc-dev/neo-go/pkg/interop/input"
-	"github.com/nspcc-dev/neo-go/pkg/interop/output"
-	"github.com/nspcc-dev/neo-go/pkg/interop/witness"
+	"github.com/ixje/neo-go-legacy/pkg/interop/attribute"
+	"github.com/ixje/neo-go-legacy/pkg/interop/input"
+	"github.com/ixje/neo-go-legacy/pkg/interop/output"
+	"github.com/ixje/neo-go-legacy/pkg/interop/witness"
 )
 
 // Transaction represents a NEO transaction, it's an opaque data structure
@@ -22,16 +22,18 @@ func GetHash(t Transaction) []byte {
 }
 
 // GetType returns the type of the given transaction. Possible values:
-//     MinerTransaction      = 0x00
-//     IssueTransaction      = 0x01
-//     ClaimTransaction      = 0x02
-//     EnrollmentTransaction = 0x20
-//     RegisterTransaction   = 0x40
-//     ContractTransaction   = 0x80
-//     StateType             = 0x90
-//     AgencyTransaction     = 0xb0
-//     PublishTransaction    = 0xd0
-//     InvocationTransaction = 0xd1
+//
+//	MinerTransaction      = 0x00
+//	IssueTransaction      = 0x01
+//	ClaimTransaction      = 0x02
+//	EnrollmentTransaction = 0x20
+//	RegisterTransaction   = 0x40
+//	ContractTransaction   = 0x80
+//	StateType             = 0x90
+//	AgencyTransaction     = 0xb0
+//	PublishTransaction    = 0xd0
+//	InvocationTransaction = 0xd1
+//
 // It uses `Neo.Transaction.GetType` syscall.
 func GetType(t Transaction) byte {
 	return 0x00

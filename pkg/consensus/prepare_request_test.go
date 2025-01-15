@@ -3,8 +3,8 @@ package consensus
 import (
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/internal/random"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/internal/random"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 	"github.com/stretchr/testify/require"
 )
 

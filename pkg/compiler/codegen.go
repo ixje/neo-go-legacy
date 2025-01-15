@@ -13,11 +13,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/vm"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
-	"github.com/nspcc-dev/neo-go/pkg/vm/opcode"
+	"github.com/ixje/neo-go-legacy/pkg/encoding/address"
+	"github.com/ixje/neo-go-legacy/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/vm"
+	"github.com/ixje/neo-go-legacy/pkg/vm/emit"
+	"github.com/ixje/neo-go-legacy/pkg/vm/opcode"
 	"golang.org/x/tools/go/loader"
 )
 
@@ -1147,12 +1147,12 @@ func (c *codegen) convertBuiltin(expr *ast.CallExpr) {
 // transformArgs returns a list of function arguments
 // which should be put on stack.
 // There are special cases for builtins:
-// 1. When using AppCall, script hash is a part of the instruction so
-//    it should be emitted after APPCALL.
-// 2. With FromAddress, parameter conversion is happening at compile-time
-//    so there is no need to push parameters on stack and perform an actual call
-// 3. With panic, generated code depends on if argument was nil or a string so
-//    it should be handled accordingly.
+//  1. When using AppCall, script hash is a part of the instruction so
+//     it should be emitted after APPCALL.
+//  2. With FromAddress, parameter conversion is happening at compile-time
+//     so there is no need to push parameters on stack and perform an actual call
+//  3. With panic, generated code depends on if argument was nil or a string so
+//     it should be handled accordingly.
 func transformArgs(fun ast.Expr, args []ast.Expr) []ast.Expr {
 	switch f := fun.(type) {
 	case *ast.SelectorExpr:

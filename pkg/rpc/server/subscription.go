@@ -2,10 +2,10 @@ package server
 
 import (
 	"github.com/gorilla/websocket"
-	"github.com/nspcc-dev/neo-go/pkg/core/transaction"
-	"github.com/nspcc-dev/neo-go/pkg/rpc/request"
-	"github.com/nspcc-dev/neo-go/pkg/rpc/response"
-	"github.com/nspcc-dev/neo-go/pkg/rpc/response/result"
+	"github.com/ixje/neo-go-legacy/pkg/core/transaction"
+	"github.com/ixje/neo-go-legacy/pkg/rpc/request"
+	"github.com/ixje/neo-go-legacy/pkg/rpc/response"
+	"github.com/ixje/neo-go-legacy/pkg/rpc/response/result"
 	"go.uber.org/atomic"
 )
 

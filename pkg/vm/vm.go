@@ -11,10 +11,10 @@ import (
 	"text/tabwriter"
 	"unicode/utf8"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/hash"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm/opcode"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/hash"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/keys"
+	"github.com/ixje/neo-go-legacy/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/vm/opcode"
 	"github.com/pkg/errors"
 )
 
@@ -611,7 +611,7 @@ func (v *VM) execute(ctx *Context, op opcode.Opcode, parameter []byte) (err erro
 		s := v.estack.Pop().Bytes()
 		if o > len(s) {
 			// panic("invalid offset")
-			// FIXME revert when NEO 3.0 https://github.com/nspcc-dev/neo-go/issues/477
+			// FIXME revert when NEO 3.0 https://github.com/ixje/neo-go-legacy/issues/477
 			v.estack.PushVal("")
 			break
 		}

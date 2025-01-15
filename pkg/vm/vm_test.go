@@ -8,12 +8,12 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/hash"
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/util"
-	"github.com/nspcc-dev/neo-go/pkg/vm/emit"
-	"github.com/nspcc-dev/neo-go/pkg/vm/opcode"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/hash"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/keys"
+	"github.com/ixje/neo-go-legacy/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/vm/emit"
+	"github.com/ixje/neo-go-legacy/pkg/vm/opcode"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -1499,7 +1499,7 @@ func TestSIZEBool(t *testing.T) {
 	runVM(t, vm)
 	assert.Equal(t, 1, vm.estack.Len())
 	// assert.Equal(t, makeStackItem(1), vm.estack.Pop().value)
-	// FIXME revert when NEO 3.0 https://github.com/nspcc-dev/neo-go/issues/477
+	// FIXME revert when NEO 3.0 https://github.com/ixje/neo-go-legacy/issues/477
 	assert.Equal(t, makeStackItem(0), vm.estack.Pop().value)
 }
 
@@ -2261,7 +2261,7 @@ func TestSUBSTRBadOffset(t *testing.T) {
 	vm.estack.PushVal(1)
 
 	// checkVMFailed(t, vm)
-	// FIXME revert when NEO 3.0 https://github.com/nspcc-dev/neo-go/issues/477
+	// FIXME revert when NEO 3.0 https://github.com/ixje/neo-go-legacy/issues/477
 	runVM(t, vm)
 	assert.Equal(t, 1, vm.estack.Len())
 	assert.Equal(t, []byte{}, vm.estack.Peek(0).Bytes())

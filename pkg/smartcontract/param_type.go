@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nspcc-dev/neo-go/pkg/crypto/keys"
-	"github.com/nspcc-dev/neo-go/pkg/encoding/address"
-	"github.com/nspcc-dev/neo-go/pkg/io"
-	"github.com/nspcc-dev/neo-go/pkg/util"
+	"github.com/ixje/neo-go-legacy/pkg/crypto/keys"
+	"github.com/ixje/neo-go-legacy/pkg/encoding/address"
+	"github.com/ixje/neo-go-legacy/pkg/io"
+	"github.com/ixje/neo-go-legacy/pkg/util"
 	"github.com/pkg/errors"
 )
 
@@ -115,18 +115,20 @@ func (pt *ParamType) DecodeBinary(r *io.BinReader) {
 
 // ParseParamType is a user-friendly string to ParamType converter, it's
 // case-insensitive and makes the following conversions:
-//     signature -> SignatureType
-//     bool, boolean -> BoolType
-//     int, integer -> IntegerType
-//     hash160 -> Hash160Type
-//     hash256 -> Hash256Type
-//     bytes, bytearray -> ByteArrayType
-//     key, publickey -> PublicKeyType
-//     string -> StringType
-//     array, struct -> ArrayType
-//     map -> MapType
-//     interopinterface -> InteropInterfaceType
-//     void -> VoidType
+//
+//	signature -> SignatureType
+//	bool, boolean -> BoolType
+//	int, integer -> IntegerType
+//	hash160 -> Hash160Type
+//	hash256 -> Hash256Type
+//	bytes, bytearray -> ByteArrayType
+//	key, publickey -> PublicKeyType
+//	string -> StringType
+//	array, struct -> ArrayType
+//	map -> MapType
+//	interopinterface -> InteropInterfaceType
+//	void -> VoidType
+//
 // anything else generates an error.
 func ParseParamType(typ string) (ParamType, error) {
 	switch strings.ToLower(typ) {

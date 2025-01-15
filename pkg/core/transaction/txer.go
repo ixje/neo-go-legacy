@@ -1,6 +1,6 @@
 package transaction
 
-import "github.com/nspcc-dev/neo-go/pkg/io"
+import "github.com/ixje/neo-go-legacy/pkg/io"
 
 // TXer is interface that can act as the underlying data of
 // a transaction.

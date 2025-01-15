@@ -1,10 +1,10 @@
 package testdata
 
 import (
-	"github.com/nspcc-dev/neo-go/pkg/interop/contract"
-	"github.com/nspcc-dev/neo-go/pkg/interop/engine"
-	"github.com/nspcc-dev/neo-go/pkg/interop/runtime"
-	"github.com/nspcc-dev/neo-go/pkg/interop/storage"
+	"github.com/ixje/neo-go-legacy/pkg/interop/contract"
+	"github.com/ixje/neo-go-legacy/pkg/interop/engine"
+	"github.com/ixje/neo-go-legacy/pkg/interop/runtime"
+	"github.com/ixje/neo-go-legacy/pkg/interop/storage"
 )
 
 const (
